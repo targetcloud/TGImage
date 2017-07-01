@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "TGImage"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "一款以最时髦的方式来使用UIImage的swift插件"
 s.homepage     = "https://github.com/targetcloud/TGImage"
 s.license      = "MIT"
