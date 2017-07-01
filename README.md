@@ -21,17 +21,19 @@
 
 #### size开启模式
 
-##### UIImage.size() 或.resizable()
-##### .color .border .corner
-##### .image
-##### .position
+```swift
+UIImage.size() 或.resizable()
+.color .border .corner
+.image
+.position
+```
 
-##### 其中size开启的是固定大小模式、resizable开启的是可变大小模式
-##### 其中color支持传入渐变色，如 gradient: [.lightGray, .white], locations: [0, 1], from: CGPoint(x: 0, y: 1), to: CGPoint(x: 0, y: 0)
-##### 其中border可以设置color、width、radius、alignment
-##### 其中corner可以分别设置4个角或统一设置四个角为同一个值
-##### 其中image用于生成 UIImage
-##### 其中position用于后面+或+=时用
+> ##### 其中size开启的是固定大小模式、resizable开启的是可变大小模式
+> ##### 其中color支持传入渐变色，如 gradient: [.lightGray, .white], locations: [0, 1], from: CGPoint(x: 0, y: 1), to: CGPoint(x: 0, y: 0)
+> ##### 其中border可以设置color、width、radius、alignment
+> ##### 其中corner可以分别设置4个角或统一设置四个角为同一个值
+> ##### 其中image用于生成 UIImage
+> ##### 其中position用于后面+或+=时用
 
 ##### 注意：按上面大的顺序链式编程，在size和image之间的color 、border 、corner没有顺序要求
 
@@ -58,7 +60,8 @@ image.with(_ block: ContextBlock)//单
 image.with(color)
 
 
-#### 应用场景
+
+#### 应用场景及Demo
 
 在cell的某角上放一个某角载剪的渐变图
 
