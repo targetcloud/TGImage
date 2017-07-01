@@ -104,7 +104,7 @@ UIImageView(image: ({ () -> UIImage in
         })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/2.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/2.png" width = "10%" hight = "10%"/>
 
 
 #### 3
@@ -184,13 +184,71 @@ UIImageView(image: ({ () -> UIImage in
 #### 6
 
 ```swift
+UIImageView(image:
+            ({ () -> UIImage in
+                let circle = UIImage.size(width: 8, height: 8)
+                    .color(.white)
+                    .corner(radius: 4)
+                    .image
+                    .position(CGPoint(x: 5, y: 5))
+                return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 44)
+                    .color(gradient: [.red, .white], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                    .corner(bottomRight: 20)
+                    .image + circle
+            })())
 ```
 
 <img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/6.png" width = "20%" hight = "20%"/>
 
+
+```swift
+UIImageView(image:
+            ({ () -> UIImage in
+                let circle = UIImage.size(width: 8, height: 8)
+                    .color(.white)
+                    .corner(radius: 4)
+                    .image
+                    .position(CGPoint(x: UIScreen.main.bounds.width * 0.5 - 15, y: 5))
+                return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 44)
+                    .color(gradient: [.white, .lightGray], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                    .corner(bottomLeft: 20)
+                    .image + circle
+            })())
+```
+
 <img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/7.png" width = "20%" hight = "20%"/>
 
+
+```swift
+UIImageView(image:
+            ({ () -> UIImage in
+                return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 44)
+                    .color(gradient: [.white, UIColor.randomColor().withAlphaComponent(0.5)], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                    .corner(topLeft: 20)
+                    .image
+            })())
+```
+
 <img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/8.png" width = "20%" hight = "20%"/>
+
+
+```swift
+UIImageView(image:
+            ({ () -> UIImage in
+                return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 22)
+                    .color(gradient: [UIColor.randomColor(), .white], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                    .corner(topLeft: 10)
+                    .image
+            })())
+            
+UIImageView(image:
+            ({ () -> UIImage in
+                return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 22)
+                    .color(gradient: [.lightGray, .white], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                    .corner(bottomLeft: 10)
+                    .image
+            })())
+```
 
 <img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/9.png" width = "20%" hight = "20%"/>
 
@@ -206,6 +264,7 @@ pod 'TGImage'
 ## Reference
 - http://blog.csdn.net/callzjy
 - https://github.com/targetcloud/baisibudejie
+- https://github.com/targetcloud/TGRefreshSwift <img src="https://github.com/targetcloud/TGRefreshSwift/blob/master/logo.png" width = "8%" hight = "8%"/>
 - https://github.com/targetcloud/TGLabel <img src="https://github.com/targetcloud/TGLabel/blob/master/logo.png" width = "8%" hight = "8%"/>
 
 
