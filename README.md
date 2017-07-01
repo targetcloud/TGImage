@@ -104,7 +104,7 @@ UIImageView(image: ({ () -> UIImage in
         })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/2.png" width = "10%" hight = "10%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/2.png" width = "5%" hight = "5%"/>
 
 
 #### 3
@@ -119,7 +119,7 @@ UIImageView(image: ({ () -> UIImage in
         })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/3.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/3.png" width = "10%" hight = "10%"/>
 
 
 #### 4
@@ -137,7 +137,7 @@ UIImageView(image: UIImage.size(width: 100, height: 100)
             .image)
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/4.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/4.png" width = "10%" hight = "10%"/>
 
 
 #### 5
@@ -178,7 +178,7 @@ UIImageView(image: ({ () -> UIImage in
         })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/5.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/5.png" width = "10%" hight = "10%"/>
 
 
 #### 6
@@ -198,7 +198,7 @@ UIImageView(image:
             })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/6.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/6.png" width = "10%" hight = "10%"/>
 
 
 ```swift
@@ -216,7 +216,7 @@ UIImageView(image:
             })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/7.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/7.png" width = "10%" hight = "10%"/>
 
 
 ```swift
@@ -229,7 +229,7 @@ UIImageView(image:
             })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/8.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/8.png" width = "10%" hight = "10%"/>
 
 
 ```swift
@@ -250,7 +250,7 @@ UIImageView(image:
             })())
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/9.png" width = "20%" hight = "20%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/9.png" width = "10%" hight = "10%"/>
 
 
 ## Installation
