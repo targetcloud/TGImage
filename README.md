@@ -1,5 +1,7 @@
 <img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/Banners.png" width = "12%" hight = "12%"/>
+
 # TGImage
+
 一款以最时髦的方式来使用UIImage的swift插件
 
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
@@ -54,6 +56,7 @@ image.with(_ block: ContextBlock)//单
 #### 其他
 
 image.with(color)
+
 
 #### 应用场景
 
