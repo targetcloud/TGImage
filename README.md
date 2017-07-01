@@ -18,19 +18,19 @@
 
 #### size开启模式
 
-UIImage.size() 或.resizable()
-.color .border .corner
-.image
-.position
+##### UIImage.size() 或.resizable()
+##### .color .border .corner
+##### .image
+##### .position
 
-其中size开启的是固定大小模式、resizable开启的是可变大小模式
-其中color支持传入渐变色，如 gradient: [.lightGray, .white], locations: [0, 1], from: CGPoint(x: 0, y: 1), to: CGPoint(x: 0, y: 0)
-其中border可以设置color、width、radius、alignment
-其中corner可以分别设置4个角或统一设置四个角为同一个值
-其中image用于生成 UIImage
-其中position用于后面+或+=时用
+##### 其中size开启的是固定大小模式、resizable开启的是可变大小模式
+##### 其中color支持传入渐变色，如 gradient: [.lightGray, .white], locations: [0, 1], from: CGPoint(x: 0, y: 1), to: CGPoint(x: 0, y: 0)
+##### 其中border可以设置color、width、radius、alignment
+##### 其中corner可以分别设置4个角或统一设置四个角为同一个值
+##### 其中image用于生成 UIImage
+##### 其中position用于后面+或+=时用
 
-注意：按上面大的顺序链式编程，在size和image之间的color 、border 、corner没有顺序要求
+##### 注意：按上面大的顺序链式编程，在size和image之间的color 、border 、corner没有顺序要求
 
 ```swift
 UIImage.size(width: CGFloat, height: CGFloat)
@@ -41,12 +41,13 @@ UIImage.resizable()
 #### with开启模式
 
 支持UIImage.with类方式开启或image.with类实例开启
+
 类方式是返回单图，实例方式开始是在实例图的基础再加上with图，实际是两图相加模式
 
 ```swift
-UIImage.with(width: CGFloat, height: CGFloat, block: ContextBlock)
-image.with(size: CGSize, opaque: Bool = false, scale: CGFloat = 0, block: ContextBlock)
-image.with(_ block: ContextBlock)
+UIImage.with(width: CGFloat, height: CGFloat, block: ContextBlock)//单
+image.with(size: CGSize, opaque: Bool = false, scale: CGFloat = 0, block: ContextBlock)//相加
+image.with(_ block: ContextBlock)//单
 ```
 
 #### 其他
