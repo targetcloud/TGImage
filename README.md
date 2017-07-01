@@ -37,6 +37,9 @@ UIImage.size() 或.resizable()
 
 ##### 注意：按上面大的顺序链式编程，在size和image之间的color 、border 、corner没有顺序要求
 
+
+size开启方式
+
 ```swift
 UIImage.size(width: CGFloat, height: CGFloat)
 UIImage.size(_ size: CGSize)
@@ -49,15 +52,19 @@ UIImage.resizable()
 
 类方式是返回单图，实例方式开始是在实例图的基础再加上with图，实际是两图相加模式
 
+
+with开启方式
+
 ```swift
 UIImage.with(width: CGFloat, height: CGFloat, block: ContextBlock)//单
 image.with(size: CGSize, opaque: Bool = false, scale: CGFloat = 0, block: ContextBlock)//相加
 image.with(_ block: ContextBlock)//单
 ```
 
-#### 其他
 
-image.with(color)
+
+
+
 
 
 
