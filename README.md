@@ -1,3 +1,4 @@
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/Banners.png" width = "12%" hight = "12%"/>
 # TGImage
 一款以最时髦的方式来使用UIImage的swift插件
 
@@ -270,3 +271,4 @@ pod 'TGImage'
 
 
 如果你觉得赞，请Star
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/logo.png" width = "12%" hight = "12%"/>
