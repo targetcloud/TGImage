@@ -8,13 +8,13 @@
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
 ![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 ![Platform](https://img.shields.io/cocoapods/p/Pastel.svg?style=flat)
-![Cocoapod](https://img.shields.io/badge/pod-v0.0.1-blue.svg)
+![Cocoapod](https://img.shields.io/badge/pod-v0.0.2-blue.svg)
 
 
 ## Features
 - [x] 支持链式编程
-- [x] 支持with CGContext和size两种开启模式
-- [x] 支持+= 、+两种操作
+- [x] 支持with 和size两种开启模式
+- [x] 支持+= 、+两种图片相加操作
 - [x] 用例丰富、快速使用
 
 ## Usage
@@ -41,7 +41,7 @@ UIImage.size(_ size: CGSize)
 UIImage.resizable()
 ```
 
-#### with开启模式
+#### with CGContext开启模式
 
 支持UIImage.with类方式开启或image.with类实例开启
 
