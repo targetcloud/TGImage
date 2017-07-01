@@ -105,9 +105,9 @@ class ViewController: UIViewController {
                 UIImage.resizable()
                     .color(.lightGray)
                     .border(gradient: [.red, .white], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
-                    .border(width: 5)
+                    .border(width: 2)
                     .border(alignment: .outside)
-                    .corner(radius: 15)
+                    .corner(radius: 8)
                     .image,
                 for: .normal
             )
@@ -158,10 +158,15 @@ class ViewController: UIViewController {
         
         let iv8 = UIImageView(image:
             ({ () -> UIImage in
+                let circle = UIImage.size(width: 8, height: 8)
+                    .color(.white)
+                    .corner(radius: 4)
+                    .image
+                    .position(CGPoint(x: 5, y: 5))
                 return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 44)
                     .color(gradient: [.red, .white], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
                     .corner(bottomRight: 20)
-                    .image
+                    .image + circle
             })())
         iv8.frame.origin.x = iv7.frame.origin.x
         iv8.frame.origin.y = iv7.frame.maxY + 5
@@ -169,10 +174,15 @@ class ViewController: UIViewController {
         
         let iv9 = UIImageView(image:
             ({ () -> UIImage in
+                let circle = UIImage.size(width: 8, height: 8)
+                    .color(.white)
+                    .corner(radius: 4)
+                    .image
+                    .position(CGPoint(x: UIScreen.main.bounds.width * 0.5 - 15, y: 5))
                 return UIImage.size(width: UIScreen.main.bounds.width*0.5, height: 44)
                     .color(gradient: [.white, .lightGray], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
                     .corner(bottomLeft: 20)
-                    .image
+                    .image + circle
             })())
         iv9.frame.origin.x = iv8.frame.origin.x
         iv9.frame.origin.y = iv8.frame.maxY + 5
@@ -242,7 +252,6 @@ class ViewController: UIViewController {
                     .corner(radius: CGFloat(30 - i * 4) * 0.5)
                     .image
                     .position(CGPoint(x: i * 2, y: 30 * i + (i + 1) * 3))
-                //container = container + doti
                 container += doti
             }
             return container
