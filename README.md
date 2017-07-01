@@ -258,6 +258,8 @@ UIImageView(image:
 <img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/9.png" width = "10%" hight = "10%"/>
 
 
+#### 更多使用配置组合效果请download本项目或fork本项目查看
+
 ## Installation
 - 下载并拖动TGImage.swift到你的工程中
 
