@@ -125,16 +125,27 @@ UIImageView(image: ({ () -> UIImage in
 #### 3
 
 ```swift
-UIImageView(image: ({ () -> UIImage in
-            return UIImage(named: "3")!.with({ context in
-                UIColor.red.setFill()
-                let rect = CGRect(x: 39, y: 37, width: 10, height: 10)
-                context.fillEllipse(in: rect)
-            })
-        })())
+UIImageView(image:
+            UIImage.size(width: 27, height: 27)
+                .corner(radius: 13.5)
+                .color(.white)
+                .border(color: .lightGray)
+                .border(width: 2)
+                .image
+                .with({ context in
+                    context.setLineCap(.round)
+                    UIColor.lightGray.setStroke()
+                    context.setLineWidth(2)
+                    context.move(to: CGPoint(x: 6, y: 12))
+                    context.addLine(to: CGPoint(x: 9, y: 18))
+                    context.move(to: CGPoint(x: 9, y: 18))
+                    context.addLine(to: CGPoint(x: 21, y: 9))
+                    context.strokePath()
+                })
+        )
 ```
 
-<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/3.png" width = "10%" hight = "10%"/>
+<img src="https://github.com/targetcloud/TGImage/blob/master/snapShot/10.png" width = "10%" hight = "10%"/>
 
 
 #### 4
