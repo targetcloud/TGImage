@@ -68,7 +68,7 @@ image.with(_ block: ContextBlock)//单
 
 
 
-#### 应用场景及Demo
+#### 应用场景及Demo(以下图都是用代码绘制的哦)
 
 在cell的某角上放一个某角载剪的渐变图
 
