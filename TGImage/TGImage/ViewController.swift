@@ -285,6 +285,19 @@ class ViewController: UIViewController {
         iv114.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 90, y: iv10.frame.maxY+5)
         self.view.addSubview(iv114)
         
+        let iv115 = UIImageView(image:
+            UIImage.size(width: 27, height: 27)
+                .corner(radius: 13.5)
+                .color(.green)
+                .image
+                .with({ context in
+                    let str:NSString = "5"
+                    str.draw(in: CGRect(x: 7, y: 1, width: 20, height: 20), withAttributes:[NSFontAttributeName:UIFont.boldSystemFont(ofSize: 20),NSForegroundColorAttributeName: UIColor.white])
+                })
+        )
+        iv115.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 120, y: iv10.frame.maxY+5)
+        self.view.addSubview(iv115)
+        
         let iv12 = UIImageView(image: ({ () -> UIImage in
             return UIImage.size(width: 54, height: 54)
                 .color(gradient: [UIColor.randomColor(), UIColor.randomColor()], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
