@@ -285,37 +285,119 @@ class ViewController: UIViewController {
         iv114.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 90, y: iv10.frame.maxY+5)
         self.view.addSubview(iv114)
         
-        let iv115 = UIImageView(image:
-            UIImage.size(width: 27, height: 27)
-                .corner(radius: 13.5)
+        let iv115 = UIImageView(image:({ () -> UIImage in
+            let M = 30 * 0.111111
+            return UIImage.size(width: 30, height: 30)
+                .corner(radius: 15)
                 .color(.green)
                 .image
                 .with({ context in
                     let str:NSString = "5"
-                    str.draw(in: CGRect(x: 7, y: 1, width: 20, height: 20), withAttributes:[NSFontAttributeName:UIFont.boldSystemFont(ofSize: 20),NSForegroundColorAttributeName: UIColor.white])
+                    str.draw(in: CGRect(x: M * (5>9 ? 2 : 2.5), y: M, width: 20, height: 20), withAttributes:[NSFontAttributeName:UIFont.boldSystemFont(ofSize: 20),NSForegroundColorAttributeName: UIColor.white])
                 })
-        )
+        })())
         iv115.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 120, y: iv10.frame.maxY+5)
         self.view.addSubview(iv115)
         
-        let iv12 = UIImageView(image: ({ () -> UIImage in
-            return UIImage.size(width: 54, height: 54)
-                .color(gradient: [UIColor.randomColor(), UIColor.randomColor()], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
-                .corner(radius: 27)
+        let iv116 = UIImageView(image:
+            UIImage.size(width: 30, height: 30)
+                .corner(radius: 15)
+                .color(.clear)
+//                .border(color: .white)
+//                .border(width: 1)
                 .image
                 .with({ context in
                     context.setLineCap(.round)
                     UIColor.white.setStroke()
-                    context.setLineWidth(4)
-                    context.move(to: CGPoint(x: 12, y: 27))
-                    context.addLine(to: CGPoint(x: 21, y: 36))
-                    context.move(to: CGPoint(x: 21, y: 36))
-                    context.addLine(to: CGPoint(x: 42, y: 18))
+                    context.setLineWidth(2)
+                    context.move(to: CGPoint(x: 17, y: 7))
+                    context.addLine(to: CGPoint(x: 10, y: 15))
+                    context.move(to: CGPoint(x: 10, y: 15))
+                    context.addLine(to: CGPoint(x: 17, y: 23))
+                    context.strokePath()
+                })
+        )
+        iv116.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 155, y: iv10.frame.maxY+5)
+        self.view.addSubview(iv116)
+        
+        let iv117 = UIImageView(image:
+            UIImage.size(width: 20, height: 20)
+                .color(.clear)
+                .image
+                .with({ context in
+                    context.setLineCap(.round)
+                    UIColor.white.setStroke()
+                    context.setLineWidth(1.5)
+                    context.move(to: CGPoint(x: 8, y: 4))
+                    context.addLine(to: CGPoint(x: 12, y: 4))
+                    context.move(to: CGPoint(x: 4, y: 5))
+                    context.addLine(to: CGPoint(x: 16, y: 5))
+                    context.move(to: CGPoint(x: 5, y: 16))
+                    context.addLine(to: CGPoint(x: 15, y: 16))
+                    
+                    context.move(to: CGPoint(x: 5, y: 6))
+                    context.addLine(to: CGPoint(x: 5, y: 16))
+                    
+                    context.move(to: CGPoint(x: 8, y: 7))
+                    context.addLine(to: CGPoint(x: 8, y: 13))
+                    
+                    context.move(to: CGPoint(x: 12, y: 7))
+                    context.addLine(to: CGPoint(x: 12, y: 13))
+                    
+                    context.move(to: CGPoint(x: 15, y: 6))
+                    context.addLine(to: CGPoint(x: 15, y: 16))
+                    context.strokePath()
+                })
+        )
+        iv117.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 - 22 , y: iv10.frame.maxY+5)
+        self.view.addSubview(iv117)
+        
+        let iv12 = UIImageView(image: ({ () -> UIImage in
+            let M = 48 * 0.111111
+            return UIImage.size(width: 48, height: 48)
+                .color(gradient: [UIColor.green, UIColor.green.withAlphaComponent(0.1)], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                .corner(radius: 24)
+                .image
+                .with({ context in
+                    context.setLineCap(.round)
+                    UIColor.white.setStroke()
+                    context.setLineWidth(2)
+                    context.move(to: CGPoint(x: M * 2, y: M * 4))
+                    context.addLine(to: CGPoint(x: M * 3, y: M * 6))
+                    context.move(to: CGPoint(x: M * 3, y: M * 6))
+                    context.addLine(to: CGPoint(x: M * 7, y: M * 3))
                     context.strokePath()
             })
         })())
         iv12.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5, y: iv11.frame.maxY+5)
         self.view.addSubview(iv12)
+        
+        let iv122 = UIImageView(image: ({ () -> UIImage in
+            let M = 48 * 0.111111
+            return UIImage.size(width: 48, height: 48)
+                .color(gradient: [UIColor.red, UIColor.red.withAlphaComponent(0.1)], locations: [0, 1], from: CGPoint(x: 0, y: 0), to: CGPoint(x: 1, y: 1))
+                .corner(radius: 24)
+                .image
+                .with({ context in
+                    context.setLineCap(.round)
+                    UIColor.white.setStroke()
+                    context.setLineWidth(2)
+                    context.move(to: CGPoint(x: M * 3, y: M * 3))
+                    context.addLine(to: CGPoint(x: M * 6, y: M * 6))
+                    context.move(to: CGPoint(x: M * 6, y: M * 3))
+                    context.addLine(to: CGPoint(x: M * 3, y: M * 6))
+                    context.strokePath()
+                })
+        })())
+        iv122.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 50, y: iv11.frame.maxY+5)
+        self.view.addSubview(iv122)
+        
+        let iv123 = UIImageView(image:
+            UIImage.size(width: 48, height: 48).border(width: 3).border(color: .white).color(UIColor(white: 0.9, alpha: 1)).corner(radius: 24).image +
+                UIImage.size(width: 40, height: 40).color(UIColor(white: 0.95, alpha: 1) ).corner(radius: 20).image
+        )
+        iv123.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 100, y: iv11.frame.maxY+5)
+        self.view.addSubview(iv123)
         
         let iv13 = UIImageView(image: ({ () -> UIImage in
             var container = UIImage.size(width: 180, height: 20)
