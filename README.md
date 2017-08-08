@@ -292,8 +292,8 @@ pod 'TGImage'
 ## Reference
 - http://blog.csdn.net/callzjy
 - https://github.com/targetcloud/baisibudejie
-- https://github.com/targetcloud/TGRefreshSwift <img src="https://github.com/targetcloud/TGRefreshSwift/blob/master/logo.png" width = "12%" hight = "12%"/>
-- https://github.com/targetcloud/TGLabel <img src="https://github.com/targetcloud/TGLabel/blob/master/logo.png" width = "12%" hight = "12%"/>
+- https://github.com/targetcloud/TGRefreshSwift <img src="https://github.com/targetcloud/TGRefreshSwift/blob/master/logo.png" width = "100%" hight = "100%"/>
+- https://github.com/targetcloud/TGLabel <img src="https://github.com/targetcloud/TGLabel/blob/master/logo.png" width = "50%" hight = "50%"/>
 
 
 如果你觉得赞，请Star
