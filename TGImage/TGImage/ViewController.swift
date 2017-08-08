@@ -205,6 +205,7 @@ class ViewController: UIViewController {
         iv10.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5, y: iv9.frame.maxY+5)
         self.view.addSubview(iv10)
         
+        //方yes
         let iv11 = UIImageView(image:
              UIImage.size(width: 27, height: 27)
                 .border(color: .black)
@@ -226,6 +227,7 @@ class ViewController: UIViewController {
         iv11.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5, y: iv10.frame.maxY+5)
         self.view.addSubview(iv11)
         
+        //yes
         let iv112 = UIImageView(image:
             UIImage.size(width: 27, height: 27)
                 .corner(radius: 13.5)
@@ -245,6 +247,7 @@ class ViewController: UIViewController {
         iv112.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 30, y: iv10.frame.maxY+5)
         self.view.addSubview(iv112)
         
+        //yes
         let iv113 = UIImageView(image:
             UIImage.size(width: 27, height: 27)
                 .corner(radius: 13.5)
@@ -264,6 +267,7 @@ class ViewController: UIViewController {
         iv113.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 60, y: iv10.frame.maxY+5)
         self.view.addSubview(iv113)
         
+        //yes
         let iv114 = UIImageView(image:
             UIImage.size(width: 27, height: 27)
                 .corner(radius: 13.5)
@@ -285,6 +289,7 @@ class ViewController: UIViewController {
         iv114.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 90, y: iv10.frame.maxY+5)
         self.view.addSubview(iv114)
         
+        //数字
         let iv115 = UIImageView(image:({ () -> UIImage in
             let M = 30 * 0.111111
             return UIImage.size(width: 30, height: 30)
@@ -299,6 +304,7 @@ class ViewController: UIViewController {
         iv115.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 120, y: iv10.frame.maxY+5)
         self.view.addSubview(iv115)
         
+        //返回
         let iv116 = UIImageView(image:
             UIImage.size(width: 30, height: 30)
                 .corner(radius: 15)
@@ -320,6 +326,7 @@ class ViewController: UIViewController {
         iv116.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 155, y: iv10.frame.maxY+5)
         self.view.addSubview(iv116)
         
+        //删除
         let iv117 = UIImageView(image:
             UIImage.size(width: 20, height: 20)
                 .color(.clear)
@@ -352,6 +359,7 @@ class ViewController: UIViewController {
         iv117.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 - 22 , y: iv10.frame.maxY+5)
         self.view.addSubview(iv117)
         
+        //对
         let iv12 = UIImageView(image: ({ () -> UIImage in
             let M = 48 * 0.111111
             return UIImage.size(width: 48, height: 48)
@@ -372,6 +380,7 @@ class ViewController: UIViewController {
         iv12.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5, y: iv11.frame.maxY+5)
         self.view.addSubview(iv12)
         
+        //错
         let iv122 = UIImageView(image: ({ () -> UIImage in
             let M = 48 * 0.111111
             return UIImage.size(width: 48, height: 48)
@@ -392,6 +401,7 @@ class ViewController: UIViewController {
         iv122.frame.origin = CGPoint(x: UIScreen.main.bounds.width*0.5 + 50, y: iv11.frame.maxY+5)
         self.view.addSubview(iv122)
         
+        //照相
         let iv123 = UIImageView(image:
             UIImage.size(width: 48, height: 48).border(width: 3).border(color: .white).color(UIColor(white: 0.9, alpha: 1)).corner(radius: 24).image +
                 UIImage.size(width: 40, height: 40).color(UIColor(white: 0.95, alpha: 1) ).corner(radius: 20).image
