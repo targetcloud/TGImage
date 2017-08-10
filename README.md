@@ -293,7 +293,8 @@ pod 'TGImage'
 - http://blog.csdn.net/callzjy
 - https://github.com/targetcloud/baisibudejie
 - https://github.com/targetcloud/TGRefreshSwift <img src="https://github.com/targetcloud/TGRefreshSwift/blob/master/logo.png" width = "12%" hight = "12%"/>
-- https://github.com/targetcloud/TGLabel <img src="https://github.com/targetcloud/TGLabel/blob/master/logo.png" width = "12%" hight = "12%"/>
+- https://github.com/targetcloud/TGLabel <img src="https://github.com/targetcloud/TGLabel/blob/master/Banners.png" width = "12%" hight = "12%"/>
+- https://github.com/targetcloud/TGPhotoPicker<img src="https://github.com/targetcloud/TGPhotoPicker/blob/master/logo.png" width = "12%" hight = "12%"/>
 
 
 如果你觉得赞，请Star
