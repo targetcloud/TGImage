@@ -105,7 +105,7 @@ public func + (leftImage: UIImage, rigthImage: UIImage) -> UIImage {
         let leftRect = CGRect(x: 0, y: 0, width: leftImage.size.width, height: leftImage.size.height)
         var rightRect = CGRect(x: 0, y: 0, width: rigthImage.size.width, height: rigthImage.size.height)
         
-        if rigthImage.position.x > 0 || rigthImage.position.y > 0{
+        if rigthImage.position.x != 0 || rigthImage.position.y != 0{
             rightRect.origin.x = rigthImage.position.x
             rightRect.origin.y = rigthImage.position.y
         }else if leftRect.contains(rightRect) {
